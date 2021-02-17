@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+printf "\n\n= = = MACOS AUTOMATION - HOMEBREW = = =\n\n"
+
 # HomeBrew
 if ! command -v brew > /dev/null; then
         /bin/bash -c "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"

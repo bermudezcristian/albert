@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 
+printf "\n\n= = = MACOS AUTOMATION - XCODE CLI TOOLS = = =\n\n"
 # XCode Cli Tools
-printf "Installing XCode Cli Tools... \n"
 xcode-select --install

@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-printf "= = = MACOS AUTOMATION - MACOS DEFAULTS = = =\n"
+printf "\n\n= = = MACOS AUTOMATION - MACOS DEFAULTS = = =\n\n"
 
 printf "MACOS_DEFAULTS : System - Automatic updates for Applications and MacOS\n"
 sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool TRUE
@@ -25,7 +25,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 printf "MACOS_DEFAULTS : Mail - Copy email addresses as 'foo@example.com' instead of 'Foo Bar <foo@example.com>'\n"
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-printf "MACOS_DEFAULTS : System - Trackpad Configuration"
+printf "MACOS_DEFAULTS : System - Trackpad Configuration\n"
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 0

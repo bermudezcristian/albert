@@ -19,3 +19,4 @@ To run with specified values of variables, you should specify value to the follo
 | GIT_COMMIT_USE_GPG | Sign commits using GPG |
 | GIT_USER_GPG_KEY | GPG Key to sign commits |
 | MACOS_NAME | Machine name (lowercase) |
+| LIST_OF_DIRECTORIES | Comma separated list of directories to create |
