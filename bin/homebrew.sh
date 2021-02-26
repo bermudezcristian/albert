@@ -27,3 +27,4 @@ brew install --cask telegram
 brew install --cask vlc
 brew install --cask vscodium
 brew install --cask whatsapp
+brew install --cask zoom
