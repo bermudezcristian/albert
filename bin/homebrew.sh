@@ -8,6 +8,7 @@ if ! command -v brew > /dev/null; then
 fi
 
 printf "HOMEBREW : Installing - Formulas\n"
+brew install fastlane
 brew install gpg
 brew install mas
 brew install pinentry-mac
