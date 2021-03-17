@@ -14,6 +14,7 @@ brew install mas
 brew install pinentry-mac
 brew install terraform
 brew install vim
+brew install watch
 
 printf "HOMEBREW : Installing - Casks\n"
 brew install --cask discord
