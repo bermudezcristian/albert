@@ -10,7 +10,7 @@ if [[ -z "$MACOS_NAME" ]]; then
 	fi
 fi
 
-printf "MACOS_SETTINGS : ERROR - Setting system label and name\n"
+printf "MACOS_SETTINGS : HostName - Setting system label and name\n"
 sudo scutil --set ComputerName $MACOS_NAME
 sudo scutil --set HostName $MACOS_NAME
 sudo scutil --set LocalHostName $MACOS_NAME
