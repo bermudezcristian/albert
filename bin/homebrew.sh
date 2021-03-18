@@ -9,6 +9,7 @@ fi
 
 printf "HOMEBREW : Installing - Formulas\n"
 brew install fastlane
+brew install gh
 brew install gpg
 brew install mas
 brew install pinentry-mac
