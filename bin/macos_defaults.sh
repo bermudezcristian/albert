@@ -34,4 +34,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 0
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 0	
-	
+
+printf "MACOS_DEFAULTS : System - Keyboard\n"
+printf "MACOS_DEFAULTS : System - Keyboard - Key Repeat"
+defaults write -globalDomain KeyRepeat -int 2 
+printf "MACOS_DEFAULTS : System - Keyboard - Delay Until Repeat"
+defaults write -globalDomain InitialKeyRepeat -int 15
