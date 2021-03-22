@@ -28,6 +28,8 @@ brew install --cask openvpn-connect
 brew install --cask slack
 brew install --cask telegram
 brew install --cask vagrant
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
 brew install --cask vlc
 brew install --cask vscodium
 brew install --cask whatsapp
