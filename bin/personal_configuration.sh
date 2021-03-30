@@ -28,19 +28,6 @@ else
 	done
 fi
 
-printf "\nPERSONAL_CONFIGURATION : firefox - Profile\n"
-if [[ $FIREFOX_PERSONALIZATION == 'true' ]]; then
-	FIREFOX_PATH=$HOME_DIRECTORY/Library/Application\ Support/Firefox/Profiles
-	if [ -d $FIREFOX_PATH ]; then
-		printf "PERSONAL_CONFIGURATION : firefox - Profile found\n"
-	else
-		printf "PERSONAL_CONFIGURATION : firefox - Profile does not exists, please open Firefox, close it, and run this script again\n"
-		# printf "\nPERSONAL_CONFIGURATION : firefox - You can run this script again, chosing the firefox option" #TODO
-	fi
-else
-	printf "firefox personalization was not enabled"
-fi
-
 printf "\nPERSONAL_CONFIGURATION : zsh - install\n"
 if [[ -z "$ZSH" ]]; then
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
