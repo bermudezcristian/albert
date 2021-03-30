@@ -8,6 +8,7 @@ process_option() {
 			bin/xcodeclitools.sh
 			bin/homebrew.sh
 			bin/macos_appstore.sh
+			bin/optional/firefox.sh
 			bin/personal_configuration.sh
 			;;
 		'u')
