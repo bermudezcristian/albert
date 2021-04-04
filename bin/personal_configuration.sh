@@ -28,11 +28,11 @@ else
 	done
 fi
 
-printf "\nPERSONAL_CONFIGURATION : zsh - install\n"
-if [[ -z "$ZSH" ]]; then
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	chmod g-w,o-w /usr/local/share/zsh/site-functions
-	chmod g-w,o-w /usr/local/share/zsh
-else	
-	printf "PERSONAL_CONFIGURATION : zsh - nothing to do\n"
-fi
+#printf "\nPERSONAL_CONFIGURATION : zsh - install\n"
+#if [[ -z "$ZSH" ]]; then
+#	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#	chmod g-w,o-w /usr/local/share/zsh/site-functions
+#	chmod g-w,o-w /usr/local/share/zsh
+#else	
+#	printf "PERSONAL_CONFIGURATION : zsh - nothing to do\n"
+#fi
