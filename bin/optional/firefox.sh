@@ -51,9 +51,11 @@ if [[ $FIREFOX_PERSONALIZATION == 'true' ]]; then
   z-index: 1;
 }
 EOF
-			if grep -q "toolkit.legacyUserProfileCustomizations.stylesheets" "$FIREFOX_PATH/$FIREFOX_PROFILE/chrome/userChrome.css"; then
-				echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> "$FIREFOX_PATH/$FIREFOX_PROFILE/prefs.js"			
-			fi
+		fi
+		if grep -q "toolkit.legacyUserProfileCustomizations.stylesheets" "$FIREFOX_PATH/$FIREFOX_PROFILE/prefs.js"; then
+			printf "Configuration already in place"
+		else
+                	echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> "$FIREFOX_PATH/$FIREFOX_PROFILE/prefs.js"
 		fi
 	fi
 
