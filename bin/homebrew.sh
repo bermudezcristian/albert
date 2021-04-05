@@ -12,6 +12,7 @@ brew install aws
 brew install fastlane
 brew install gh
 brew install gpg
+brew install jq
 brew install mas
 brew install pinentry-mac
 brew install terraform
