@@ -8,7 +8,7 @@ if ! command -v brew > /dev/null; then
 fi
 
 printf "HOMEBREW : Installing - Formulas\n"
-brew install aws
+brew install awscli
 brew install fastlane
 brew install gh
 brew install gpg
