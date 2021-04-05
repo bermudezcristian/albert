@@ -8,6 +8,7 @@ if ! command -v brew > /dev/null; then
 fi
 
 printf "HOMEBREW : Installing - Formulas\n"
+brew install antigen
 brew install awscli
 brew install fastlane
 brew install gh

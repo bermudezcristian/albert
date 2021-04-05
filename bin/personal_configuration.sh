@@ -30,9 +30,25 @@ fi
 
 printf "\nPERSONAL_CONFIGURATION : zsh - install\n"
 if [[ -z "$ZSH" ]]; then
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	chmod g-w,o-w /usr/local/share/zsh/site-functions
-	chmod g-w,o-w /usr/local/share/zsh
+	CELLAR_PATH="/usr/local/Cellar"
+	ANTIGEN_VERSION=$(ls "$CELLAR_PATH/antigen/")
+	ANTIGEN_PATH_TO_ADD="$CELLAR_PATH/antigen/$ANTIGEN_VERSION/share/antigen/antigen.zsh"
+	echo "source \"$ANTIGEN_PATH_TO_ADD\"" >> "$HOME_DIRECTORY/.zshrc" 
+	echo "antigen init ~/.antigenrc"
+	cat > "$HOME_DIRECTORY/.antigenrc" << EOF
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from the default repo (oh-my-zsh)
+
+# Load bundles from external repos
+
+# Select theme
+antigen theme romkatv/powerlevel10k
+
+# Tell Antigen that you're done
+antigen apply
+EOF
 else	
 	printf "PERSONAL_CONFIGURATION : zsh - nothing to do\n"
 fi
