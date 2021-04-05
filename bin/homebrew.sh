@@ -21,6 +21,7 @@ brew install watch
 
 printf "HOMEBREW : Installing - Casks\n"
 brew install --cask discord
+brew install --cask docker
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask iterm2
