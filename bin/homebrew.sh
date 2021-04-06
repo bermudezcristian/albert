@@ -10,6 +10,7 @@ fi
 printf "HOMEBREW : Installing - Formulas\n"
 brew install antigen
 brew install awscli
+brew install doctl
 brew install fastlane
 brew install fortune
 brew install gh
