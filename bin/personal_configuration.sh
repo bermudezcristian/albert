@@ -33,9 +33,13 @@ if [[ -z "$ZSH" ]]; then
 	CELLAR_PATH="/usr/local/Cellar"
 	ANTIGEN_VERSION=$(ls "$CELLAR_PATH/antigen/")
 	ANTIGEN_PATH_TO_ADD="$CELLAR_PATH/antigen/$ANTIGEN_VERSION/share/antigen/antigen.zsh"
-	echo "source \"$ANTIGEN_PATH_TO_ADD\"" >> "$HOME_DIRECTORY/.zshrc" 
-	echo "antigen init ~/.antigenrc"
-	cat > "$HOME_DIRECTORY/.antigenrc" << EOF
+	if grep -q "antigen" ~/.zsh; then
+		echo "Antigen already configured"
+	else
+		echo "source \"$ANTIGEN_PATH_TO_ADD\"" >> "$HOME_DIRECTORY/.zshrc" 
+		echo "antigen init ~/.antigenrc" >> "$HOME_DIRECTORY/.zshrc"
+	fi
+		cat > "$HOME_DIRECTORY/.antigenrc" << EOF
 # Load oh-my-zsh library
 antigen use oh-my-zsh
 
