@@ -11,6 +11,7 @@ printf "HOMEBREW : Installing - Formulas\n"
 brew install antigen
 brew install awscli
 brew install fastlane
+brew install fortune
 brew install gh
 brew install gpg
 brew install jq
