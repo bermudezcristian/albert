@@ -33,7 +33,7 @@ if [[ -z "$ZSH" ]]; then
 	CELLAR_PATH="/usr/local/Cellar"
 	ANTIGEN_VERSION=$(ls "$CELLAR_PATH/antigen/")
 	ANTIGEN_PATH_TO_ADD="$CELLAR_PATH/antigen/$ANTIGEN_VERSION/share/antigen/antigen.zsh"
-	if grep -q "antigen" ~/.zsh; then
+	if grep -q "antigen" ~/.zshrc; then
 		echo "Antigen already configured"
 	else
 		echo "source \"$ANTIGEN_PATH_TO_ADD\"" >> "$HOME_DIRECTORY/.zshrc" 
