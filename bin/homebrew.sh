@@ -18,6 +18,7 @@ brew install gpg
 brew install jq
 brew install mas
 brew install pinentry-mac
+brew install pygments
 brew install terraform
 brew install vim
 brew install watch
