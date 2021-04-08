@@ -19,6 +19,7 @@ brew install helm
 brew install httpie
 brew install jq
 brew install mas
+brew install nmap
 brew install pinentry-mac
 brew install pygments
 brew install terraform
