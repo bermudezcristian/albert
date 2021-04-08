@@ -15,6 +15,7 @@ brew install fastlane
 brew install fortune
 brew install gh
 brew install gpg
+brew install helm
 brew install jq
 brew install mas
 brew install pinentry-mac
