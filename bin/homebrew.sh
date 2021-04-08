@@ -20,6 +20,7 @@ brew install httpie
 brew install jq
 brew install mas
 brew install nmap
+brew install nvm
 brew install pinentry-mac
 brew install pygments
 brew install terraform
