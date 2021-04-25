@@ -34,6 +34,7 @@ brew install --cask discord
 brew install --cask docker
 brew install --cask firefox
 brew install --cask google-chrome
+brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask media-converter
 brew install --cask obs
