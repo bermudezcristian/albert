@@ -17,10 +17,12 @@ brew install gh
 brew install gpg
 brew install helm
 brew install httpie
+brew install jenv
 brew install jq
 brew install mas
 brew install nmap
 brew install nvm
+brew install openjdk@8
 brew install pinentry-mac
 brew install pygments
 brew install terraform

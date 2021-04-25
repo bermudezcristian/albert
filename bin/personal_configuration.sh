@@ -47,6 +47,15 @@ if [[ -z "$ZSH" ]]; then
 		echo "source \"$ANTIGEN_PATH_TO_ADD\"" >> "$HOME_DIRECTORY/.zshrc" 
 		echo "antigen init ~/.antigenrc" >> "$HOME_DIRECTORY/.zshrc"
 	fi
+
+	if grep -q "jenv" ~/.zshrc; then
+		echo "jenv and java already configured"
+	else
+		echo "export PATH=\"$HOME/.jenv/bin:$PATH\"" >> "$HOME_DIRECTORY/.zshrc"
+		echo "eval \"$(jenv init -)\"" >> "$HOME_DIRECTORY/.zshrc"
+		jenv add /usr/local/opt/openjdk@8/
+	fi
+		
 	cat > "$HOME_DIRECTORY/.antigenrc" << EOF
 # Load oh-my-zsh library
 antigen use oh-my-zsh
