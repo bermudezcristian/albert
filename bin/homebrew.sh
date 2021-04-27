@@ -30,6 +30,7 @@ brew install vim
 brew install watch
 
 printf "HOMEBREW : Installing - Casks\n"
+brew install --cask digital
 brew install --cask discord
 brew install --cask docker
 brew install --cask firefox
